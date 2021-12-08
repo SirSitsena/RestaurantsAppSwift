@@ -7,16 +7,41 @@
 
 import SwiftUI
 
+
+
 struct RestaurantsListView: View {
+    @ObservedObject var fetcher: dataFetcher
+    @State var ready = false
+    func create(){
+        fetcher.fetch()
+    }
+    
     var body: some View {
-        List {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        }
+                NavigationView{
+                    List {
+                    Text("Jönköping City Restaurants")
+                        if let restaurants = fetcher.restaurants {
+                            ForEach(restaurants,  id: \.id  ){ rest in
+                                HStack{
+                                    Text(rest.name)
+                                }
+                            }
+                    }
+                    }
+                }
+                .onAppear(perform: {
+                    if ready == false{
+                        create()
+                        //restaurants = fetcher.restaurants
+                        ready = true
+                    }
+                    
+                })
     }
 }
 
-struct RestaurantsListView_Previews: PreviewProvider {
-    static var previews: some View {
-        RestaurantsListView()
-    }
-}
+//struct RestaurantsListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RestaurantsListView(fetcher: dataFetcher())
+//    }
+//}

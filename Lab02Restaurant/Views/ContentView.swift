@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var fetcher = dataFetcher()
+    
     var body: some View {
         TabView {
-            RestaurantsListView()
+            RestaurantsListView( fetcher: fetcher )
                 .tabItem {
                     Text("Restaurants")
                     Image(systemName: "pencil")

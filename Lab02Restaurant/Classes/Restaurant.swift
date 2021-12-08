@@ -8,20 +8,29 @@
 import Foundation
 import Combine
 
-struct Restaurant: Identifiable {
-    let id: Int
-    var name: String = ""
-    var description: String = ""
-    var url: String = ""
-    let telefon: Int
-    var categories = [String]()
+struct Initial: Decodable {
     
-    init( id: Int, name: String, description: String, url: String, telefon: Int, categories: [String] ){
-        self.id = id
-        self.name = name
-        self.description = description
-        self.url = url
-        self.telefon = telefon
-        self.categories = categories
-    }
+    let restaurants: [Restaurant]
+    
+}
+
+struct Restaurants: Decodable {
+    
+    let restaurants: [Restaurant]
+
+}
+
+struct Restaurant: Decodable, Identifiable {
+    
+    let id: Int
+    let name: String
+    let description: String
+    let image: String
+    let url: String
+    let menu: String
+    let telefon: String
+    let categories: [String]
+    let openingHours: openHours
+    let location: Location
+    
 }

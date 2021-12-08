@@ -9,9 +9,13 @@ import SwiftUI
 
 struct FavoritedView: View {
     var body: some View {
-        List {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List {
+            Text("Jönköping City Restaurants")
+//                ForEach(Restaurants)
+            }
         }
+        
     }
 }
 
