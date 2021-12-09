@@ -20,7 +20,7 @@ struct Restaurants: Decodable {
 
 }
 
-struct Restaurant: Decodable, Identifiable {
+struct Restaurant: Identifiable, Codable {
     
     let id: Int
     let name: String

@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-struct openHours: Decodable {
+struct openHours: Codable {
     
     var mon: String = ""
     var tue: String = ""

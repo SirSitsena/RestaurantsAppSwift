@@ -12,27 +12,34 @@ import SwiftUI
 struct RestaurantsListView: View {
     @ObservedObject var fetcher: dataFetcher
     @State var ready = false
+    @AppStorage("FavRests")
+    private var FavRestsData: Data = Data()
     func create(){
         fetcher.fetch()
     }
     
     var body: some View {
                 NavigationView{
+//                    NavigationLink(destination: RestaurantView(restaurant:rest)){
+//                        Text(rest.name)
+//                    }
+                    
                     List {
-                    Text("Jönköping City Restaurants")
-                        if let restaurants = fetcher.restaurants {
-                            ForEach(restaurants,  id: \.id  ){ rest in
-                                HStack{
+                        Text("Jönköping City Restaurants")
+                        if let restaurants = fetcher.restaurants{
+                        ForEach(restaurants){ rest in
+                            HStack{
+                                NavigationLink(destination: RestaurantView(restaurant:rest)){
                                     Text(rest.name)
                                 }
                             }
-                    }
+                        }
+                        }
                     }
                 }
                 .onAppear(perform: {
                     if ready == false{
                         create()
-                        //restaurants = fetcher.restaurants
                         ready = true
                     }
                     
