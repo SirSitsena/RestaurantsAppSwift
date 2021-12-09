@@ -17,6 +17,7 @@
 		BC54AF60275FA8AF006C0290 /* imageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF5F275FA8AF006C0290 /* imageFetcher.swift */; };
 		BC54AF62275FA8CA006C0290 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF61275FA8CA006C0290 /* Restaurant.swift */; };
 		BC54AF67275FACA7006C0290 /* openHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF66275FACA7006C0290 /* openHours.swift */; };
+		CE5305882762215B002E7282 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5305872762215B002E7282 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BC54AF5F275FA8AF006C0290 /* imageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageFetcher.swift; sourceTree = "<group>"; };
 		BC54AF61275FA8CA006C0290 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		BC54AF66275FACA7006C0290 /* openHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openHours.swift; sourceTree = "<group>"; };
+		CE5305872762215B002E7282 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		BC54AF68275FACB1006C0290 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CE5305872762215B002E7282 /* Location.swift */,
 				BC54AF66275FACA7006C0290 /* openHours.swift */,
 				BC54AF61275FA8CA006C0290 /* Restaurant.swift */,
 			);
@@ -183,6 +186,7 @@
 				BC54AF58275FA41E006C0290 /* RestaurantsListView.swift in Sources */,
 				BC54AF4C275FA113006C0290 /* ContentView.swift in Sources */,
 				BC54AF62275FA8CA006C0290 /* Restaurant.swift in Sources */,
+				CE5305882762215B002E7282 /* Location.swift in Sources */,
 				BC54AF60275FA8AF006C0290 /* imageFetcher.swift in Sources */,
 				BC54AF5A275FA42D006C0290 /* FavoritedView.swift in Sources */,
 				BC54AF67275FACA7006C0290 /* openHours.swift in Sources */,
