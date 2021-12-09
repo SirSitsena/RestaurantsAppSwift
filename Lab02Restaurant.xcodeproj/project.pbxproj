@@ -20,6 +20,8 @@
 		CE5305882762215B002E7282 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5305872762215B002E7282 /* Location.swift */; };
 		CE53058A27622319002E7282 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53058927622319002E7282 /* RestaurantView.swift */; };
 		CE53058C276224EF002E7282 /* saveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53058B276224EF002E7282 /* saveController.swift */; };
+		CE53059027628AD8002E7282 /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53058F27628AD8002E7282 /* RandomView.swift */; };
+		CE5305922762925E002E7282 /* RandomRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5305912762925E002E7282 /* RandomRestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		CE5305872762215B002E7282 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		CE53058927622319002E7282 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		CE53058B276224EF002E7282 /* saveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveController.swift; sourceTree = "<group>"; };
+		CE53058F27628AD8002E7282 /* RandomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomView.swift; sourceTree = "<group>"; };
+		CE5305912762925E002E7282 /* RandomRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				BC54AF57275FA41E006C0290 /* RestaurantsListView.swift */,
+				CE53058F27628AD8002E7282 /* RandomView.swift */,
+				CE5305912762925E002E7282 /* RandomRestView.swift */,
 				BC54AF4B275FA113006C0290 /* ContentView.swift */,
 				BC54AF59275FA42D006C0290 /* FavoritedView.swift */,
 				CE53058927622319002E7282 /* RestaurantView.swift */,
@@ -191,9 +197,11 @@
 				BC54AF5E275FA89A006C0290 /* dataFetcher.swift in Sources */,
 				BC54AF58275FA41E006C0290 /* RestaurantsListView.swift in Sources */,
 				BC54AF4C275FA113006C0290 /* ContentView.swift in Sources */,
+				CE53059027628AD8002E7282 /* RandomView.swift in Sources */,
 				CE53058A27622319002E7282 /* RestaurantView.swift in Sources */,
 				BC54AF62275FA8CA006C0290 /* Restaurant.swift in Sources */,
 				CE5305882762215B002E7282 /* Location.swift in Sources */,
+				CE5305922762925E002E7282 /* RandomRestView.swift in Sources */,
 				BC54AF60275FA8AF006C0290 /* imageFetcher.swift in Sources */,
 				BC54AF5A275FA42D006C0290 /* FavoritedView.swift in Sources */,
 				BC54AF67275FACA7006C0290 /* openHours.swift in Sources */,

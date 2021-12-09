@@ -17,6 +17,13 @@ class dataFetcher: ObservableObject {
     
     private var cancellableTask: AnyCancellable?
     
+    var nextRandomRest: Restaurant?{
+        if let rest = self.restaurants {
+            return rest[Int.random(in: 0...rest.count-1)]
+        } else {
+            return nil
+        }
+    }
     
     func fetch() {
         isLoading = true
@@ -41,11 +48,12 @@ class dataFetcher: ObservableObject {
         
     }
     
+
     func returnRandom() -> Restaurant?{
-        if restaurants != nil{
-            return self.restaurants![Int.random( in: 0...3)]
-        } else {
-            return nil
+            if restaurants != nil, let rests = restaurants{
+                return rests[Int.random(in: 0...rests.count-1)]
+            } else {
+                return nil
+            }
         }
-    }
 }

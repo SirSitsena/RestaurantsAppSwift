@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Combine
 
 
 struct RestaurantsListView: View {
@@ -14,18 +14,25 @@ struct RestaurantsListView: View {
     @State var ready = false
     @AppStorage("FavRests")
     private var FavRestsData: Data = Data()
+    @State var newRandomRest: Restaurant?
+    @State private var isActiveRandom = false
     func create(){
         fetcher.fetch()
     }
     
     var body: some View {
                 NavigationView{
-//                    NavigationLink(destination: RestaurantView(restaurant:rest)){
-//                        Text(rest.name)
-//                    }
-                    
+                    VStack{
+                        HStack{
+                            Text("Jönköping City Restaurants")
+                            
+                        }
                     List {
-                        Text("Jönköping City Restaurants")
+
+                        NavigationLink(destination: RandomView(restaurantFetcher: fetcher)){
+                            Text("Random Restaurant")
+                        }
+
                         if let restaurants = fetcher.restaurants{
                         ForEach(restaurants){ rest in
                             HStack{
@@ -36,16 +43,16 @@ struct RestaurantsListView: View {
                         }
                         }
                     }
-                }
-                .onAppear(perform: {
-                    if ready == false{
-                        create()
-                        ready = true
                     }
-                    
-                })
-    }
-}
+                    }
+                    .onAppear(perform: {
+                        if ready == false{
+                            create()
+                            ready = true
+                        }
+                    })
+    }}
+//}
 
 //struct RestaurantsListView_Previews: PreviewProvider {
 //    static var previews: some View {
