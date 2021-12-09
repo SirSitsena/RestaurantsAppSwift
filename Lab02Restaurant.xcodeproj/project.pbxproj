@@ -13,7 +13,7 @@
 		BC54AF51275FA114006C0290 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC54AF50275FA114006C0290 /* Preview Assets.xcassets */; };
 		BC54AF58275FA41E006C0290 /* RestaurantsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF57275FA41E006C0290 /* RestaurantsListView.swift */; };
 		BC54AF5A275FA42D006C0290 /* FavoritedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF59275FA42D006C0290 /* FavoritedView.swift */; };
-		BC54AF5E275FA89A006C0290 /* restaurantFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF5D275FA89A006C0290 /* restaurantFetcher.swift */; };
+		BC54AF5E275FA89A006C0290 /* dataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF5D275FA89A006C0290 /* dataFetcher.swift */; };
 		BC54AF60275FA8AF006C0290 /* imageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF5F275FA8AF006C0290 /* imageFetcher.swift */; };
 		BC54AF62275FA8CA006C0290 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF61275FA8CA006C0290 /* Restaurant.swift */; };
 		BC54AF67275FACA7006C0290 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF66275FACA7006C0290 /* OpeningHours.swift */; };
@@ -27,7 +27,7 @@
 		BC54AF50275FA114006C0290 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC54AF57275FA41E006C0290 /* RestaurantsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListView.swift; sourceTree = "<group>"; };
 		BC54AF59275FA42D006C0290 /* FavoritedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritedView.swift; sourceTree = "<group>"; };
-		BC54AF5D275FA89A006C0290 /* restaurantFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantFetcher.swift; sourceTree = "<group>"; };
+		BC54AF5D275FA89A006C0290 /* dataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataFetcher.swift; sourceTree = "<group>"; };
 		BC54AF5F275FA8AF006C0290 /* imageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageFetcher.swift; sourceTree = "<group>"; };
 		BC54AF61275FA8CA006C0290 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		BC54AF66275FACA7006C0290 /* OpeningHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		BC54AF65275FA901006C0290 /* jsonFetcher */ = {
 			isa = PBXGroup;
 			children = (
-				BC54AF5D275FA89A006C0290 /* restaurantFetcher.swift */,
+				BC54AF5D275FA89A006C0290 /* dataFetcher.swift */,
 				BC54AF5F275FA8AF006C0290 /* imageFetcher.swift */,
 			);
 			path = jsonFetcher;
@@ -179,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC54AF5E275FA89A006C0290 /* restaurantFetcher.swift in Sources */,
+				BC54AF5E275FA89A006C0290 /* dataFetcher.swift in Sources */,
 				BC54AF58275FA41E006C0290 /* RestaurantsListView.swift in Sources */,
 				BC54AF4C275FA113006C0290 /* ContentView.swift in Sources */,
 				BC54AF62275FA8CA006C0290 /* Restaurant.swift in Sources */,
