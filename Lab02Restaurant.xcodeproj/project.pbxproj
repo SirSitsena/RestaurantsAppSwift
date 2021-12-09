@@ -16,7 +16,7 @@
 		BC54AF5E275FA89A006C0290 /* dataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF5D275FA89A006C0290 /* dataFetcher.swift */; };
 		BC54AF60275FA8AF006C0290 /* imageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF5F275FA8AF006C0290 /* imageFetcher.swift */; };
 		BC54AF62275FA8CA006C0290 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF61275FA8CA006C0290 /* Restaurant.swift */; };
-		BC54AF67275FACA7006C0290 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF66275FACA7006C0290 /* OpeningHours.swift */; };
+		BC54AF67275FACA7006C0290 /* openHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54AF66275FACA7006C0290 /* openHours.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		BC54AF5D275FA89A006C0290 /* dataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataFetcher.swift; sourceTree = "<group>"; };
 		BC54AF5F275FA8AF006C0290 /* imageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageFetcher.swift; sourceTree = "<group>"; };
 		BC54AF61275FA8CA006C0290 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		BC54AF66275FACA7006C0290 /* OpeningHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
+		BC54AF66275FACA7006C0290 /* openHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openHours.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 		BC54AF68275FACB1006C0290 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BC54AF66275FACA7006C0290 /* OpeningHours.swift */,
+				BC54AF66275FACA7006C0290 /* openHours.swift */,
 				BC54AF61275FA8CA006C0290 /* Restaurant.swift */,
 			);
 			path = Classes;
@@ -185,7 +185,7 @@
 				BC54AF62275FA8CA006C0290 /* Restaurant.swift in Sources */,
 				BC54AF60275FA8AF006C0290 /* imageFetcher.swift in Sources */,
 				BC54AF5A275FA42D006C0290 /* FavoritedView.swift in Sources */,
-				BC54AF67275FACA7006C0290 /* OpeningHours.swift in Sources */,
+				BC54AF67275FACA7006C0290 /* openHours.swift in Sources */,
 				BC54AF4A275FA113006C0290 /* Lab02RestaurantApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
