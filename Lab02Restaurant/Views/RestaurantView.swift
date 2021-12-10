@@ -64,10 +64,75 @@ struct RestaurantView: View {
         }
     //-----------------------------------------FUNCTIONS-END
     var body: some View {
-        VStack{
+        List{
             Text(restaurant.name)
+                .font(.system(size: 45, weight: .bold, design: .default))
+                .padding(15)
+            
+            VStack{
+                AsyncImage(url: URL(string: restaurant.image)) { image in
+                    image.resizable()
+                        .aspectRatio(contentMode:.fit)
+                        .scaledToFit()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        
+                } placeholder: {
+                    ProgressView()
+                }
+            }.frame(maxHeight: .infinity)
+            
             Text(restaurant.description)
-            Text(restaurant.telefon)
+            HStack{
+                Link("Browse website", destination: URL(string: restaurant.url)!)
+                Spacer()
+                Link("Browse the menu", destination: URL(string: restaurant.menu)!)
+            }
+            
+            
+            HStack{
+                Text("Telefon: ")
+                Text(restaurant.telefon)
+                Spacer()
+            }.padding(15)
+//            HStack{
+                VStack{
+                    Text("Opening Hours:")
+                        .padding(15)
+                    HStack{
+                    VStack{
+                        HStack{
+                            Text("Monday: ")
+                            Text(restaurant.openingHours.mon)
+                        }
+                        HStack{
+                            Text("Tuesday: ")
+                            Text(restaurant.openingHours.tue)
+                        }
+                        HStack{
+                            Text("Wednsday: ")
+                            Text(restaurant.openingHours.wed)
+                        }
+                        HStack{
+                            Text("Thursday: ")
+                            Text(restaurant.openingHours.thu)
+                        }
+                        HStack{
+                            Text("Friday: ")
+                            Text(restaurant.openingHours.fri)
+                        }
+                        HStack{
+                            Text("Saturday: ")
+                            Text(restaurant.openingHours.sat)
+                        }
+                        HStack{
+                            Text("Sunday: ")
+                            Text(restaurant.openingHours.sun)
+                        }
+                    }
+                    }
+                }
+//            }
+            
             Button(action: {
                 let isFav = checkSaved()
                 if isFav == false{

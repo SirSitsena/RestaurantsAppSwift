@@ -25,18 +25,28 @@ struct RestaurantsListView: View {
                     VStack{
                         HStack{
                             Text("Jönköping City Restaurants")
+                                .font(.system(size: 25, weight: .bold, design: .default))
                             
                         }
                     List {
 
                         NavigationLink(destination: RandomView(restaurantFetcher: fetcher)){
-                            Text("Random Restaurant")
+                            Text("I feel lucky! Show me a random place")
                         }
 
                         if let restaurants = fetcher.restaurants{
                         ForEach(restaurants){ rest in
                             HStack{
                                 NavigationLink(destination: RestaurantView(restaurant:rest)){
+                                    AsyncImage(url: URL(string: rest.image)) { image in
+                                        image.resizable()
+                                            .aspectRatio(contentMode:.fit)
+                                            .scaledToFit()
+                                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                            
+                                    } placeholder: {
+                                        ProgressView()
+                                    }
                                     Text(rest.name)
                                 }
                             }

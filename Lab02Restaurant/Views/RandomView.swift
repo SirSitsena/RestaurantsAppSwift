@@ -2,7 +2,7 @@
 //  RandomView.swift
 //  Lab02Restaurant
 //
-//  Created by User on 09.12.2021.
+//  Created by User on 09.12.2021. //Stolen from Rasmus Kolmodin
 //
 
 import SwiftUI
@@ -30,7 +30,7 @@ struct RandomView: View {
                     .onAppear(perform: {
                         if let restaurant = restaurantFetcher.returnRandom() {
                             self.restaurant = restaurant
-                            self.labelText = "Click to show another restaurant"
+                            self.labelText = "Show another place"
                         }
                 })
             }
